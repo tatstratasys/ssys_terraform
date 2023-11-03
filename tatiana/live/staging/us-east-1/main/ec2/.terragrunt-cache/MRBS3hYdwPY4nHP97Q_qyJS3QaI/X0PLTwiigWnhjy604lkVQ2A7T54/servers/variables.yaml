@@ -1,0 +1,12 @@
+---
+instance_type: "t2.micro"
+ami_id: "ami-03a6eaae9938c858c"
+public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcfh+QmIzWfKM6Vo9j6rDzNZnjfhC48s3gUQs4O22MyVtkT40/Gpy71ddjAyllVJo1idYL5bl+PpGwAT43axHpYA+1HbULkfMsYV7AW+Rl4AIhdOcDUTDYAZcXw2kwm9zB5/Xufg2Hv6w51ydPQ2uC5TR0f/jlizCeXMcZocsZWvfL2JKsTqx6uA+SWS2nDY3w8kgdBhKCgaPvMdbLSAAa3x2Kfv5iByBvmy4uEVr3IYZnP8tY5bLs5Mf6wfRpoafaQDK5wcIuo8amrBw1gNN2zYCZTI4XI4nqUiiE8xxtLx2jBFRppQPBIzj2PtKHOwcf1SQgaZljtcZyKKt3kynt rsa-key-20231004
+aws_route53_record: ["myapp.tatiana.grabcad.net"]
+aws_route53_zone_name:  "tatiana.grabcad.net"
+domain_name: "mytestapp.tatiana.grabcad.net"
+bucket_name : "tatiana101bkt"
+vpc_cidr : "10.0.0.0/16"
+path: "./tats_modules/modules/servers/app"
+
+

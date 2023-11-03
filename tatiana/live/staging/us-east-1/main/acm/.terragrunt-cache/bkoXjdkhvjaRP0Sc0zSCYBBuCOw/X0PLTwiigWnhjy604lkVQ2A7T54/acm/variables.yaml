@@ -1,0 +1,9 @@
+
+process_domain_validation_options: "true"
+wait_for_certificate_issued: "true"
+aws_route53_record: ["myapp.tatiana.grabcad.net"]
+aws_route53_zone_name:  "tatiana.grabcad.net"
+domain_name: "mytestapp.tatiana.grabcad.net"
+
+
+
