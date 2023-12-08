@@ -111,8 +111,8 @@ resource "aws_key_pair" "keypair" {
   public_key = file("./ngalim_pub_key")
 }
 
-resource "aws_iam_instance_profile" "ec2_iam_profile" {
-  name = "ec2_iam_profile"
+resource "aws_iam_instance_profile" "ec2_iam_profile2" {
+  name = "ec2_iam_profile2"
   role = aws_iam_role.ec2_iam_role.name
 }
 
@@ -145,7 +145,7 @@ resource "aws_instance" "server" {
   subnet_id                   = aws_subnet.private_subnet.id
   security_groups             = [aws_security_group.server_sg.id]
   key_name                    = aws_key_pair.keypair.key_name
-  iam_instance_profile = aws_iam_instance_profile.ec2_iam_profile.name
+  iam_instance_profile = aws_iam_instance_profile.ec2_iam_profile2.name
   associate_public_ip_address = false
 
   tags = {
